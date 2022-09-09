@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="10sp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:background="@color/primaryColor"
+            android:id="@+id/imageUser"
+            android:src="@drawable/ic_launcher_foreground"
+            android:layout_width="80sp"
+            android:layout_height="80sp"/>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginStart="20sp"
+                android:layout_gravity=""
+                android:textSize="24sp"
+                android:text="User"
+                android:textColor="@color/white"
+                android:id="@+id/nameUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="20sp"
+                android:layout_gravity="left"
+                android:textSize="18sp"
+                android:text="Message..."
+                android:textColor="@color/white"
+                android:id="@+id/lastMessageUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:background="@color/primaryColor"
+        android:layout_width="match_parent"
+        android:layout_height="2sp"/>
+
+</LinearLayout>

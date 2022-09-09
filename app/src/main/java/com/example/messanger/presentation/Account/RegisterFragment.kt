@@ -94,8 +94,8 @@ class RegisterFragment : Fragment() {
 
     private fun putImage(){
         val refStorage = storage.child("images/$uid")
-        uriImage?.let { refStorage.putFile(it).addOnCompleteListener { it2->
-            Log.d("ResultFirebase", it2.isSuccessful.toString())
+        uriImage?.let { refStorage.putFile(it).addOnSuccessListener {
+
         } }
     }
 
